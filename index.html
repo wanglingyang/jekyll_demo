@@ -8,34 +8,72 @@
                 color:#3B3B3B;
                 font-weight:bold;
                 font-size:20px;}
-             #f1:hover{text-decoration:underline;
+            #f1:hover{text-decoration:underline;
                 color:blue;
                 font-weight:bold;
                 font-size:20px;}
             #f2{text-decoration:underline ;
                 color:bule;}
-             #f2:hover{text-decoration:underline:;
-                color:blue;}       
+            #f2:hover{text-decoration:underline:;
+                color:blue;}
+            body{
+                margin:0px;padding:0;
+                font-family:Helvetica,Arial,sans-serif;
+                }    
+            header{
+                border:1px #330000 solid;
+                width:800px;
+                height:80px;
+                backaround:#330000;
+                }    
+            aside{
+                width:170px;
+                float:lefe;             
+                height:400px;
+                }
+            article{
+                border-right:1px #330000 solid;
+                width:625px;
+                margin-left:175px;
+                height:400px;
+                background:#FFFFFF;
+                }    
+            footer{
+                border:1px #330000 solid;
+                background:#330000;
+                color:#ffffff;
+                width:800px;
+                height:50px;
+                text-align:center;
+                line-height:50px;
+               }
         </style>
         
 　　</head>
 　　<body>
-        <h3>
-        <a href="page1.html" target="_top" id="f1" >HTML5</a>&nbsp;
-          
-        <a href="page2.html" target="_blank" id="f1" >CSS</a>&nbsp;
-                    
-        <a href="page3.html" target="_blank" id="f1" >JaveScript</a><hr/>
-        </h3>
+        <header>
+            <h1 >HTML5 &nbsp; CSS &nbsp; JaveScript</h1>&nbsp;
+        </header>
+        
+        <aside>
+            <li><a href="page1.html" target="_top" id="f1" >HTML5</a></li>
+            <li><a href="page2.html" target="_blank" id="f1" >CSS</a></li>
+            <li><a href="page3.html" target="_blank" id="f1" >JaveScript</a></li>
+            <li><a href="page4.html" target="_blank" id="f1" >PhP</a></li>
+            <li><a href="page4.html" target="_blank" id="f1" >MySQL</a></li>
+        </aside>
             
-        <p>最新文章</p>
-   
-        <ul>
-          <li>
-        <script type="text/javascript">
-                document.write(Date())</script>       
-            <a href="page4.html" id="f2">你好，世界</a>    
-          </li>
-        </ul>
+        <article>
+            <p>信息一</p>
+            <p>信息二</p>
+            <p>信息三</p>
+        </article> 
+         
+        <footer>
+            <li><script type="text/javascript">
+            document.write(Date())</script>
+            </li>       
+        </footer>
+
 　　</body>
 　　</html>
