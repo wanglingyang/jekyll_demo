@@ -12,17 +12,16 @@
                 color:blue;
                 font-weight:bold;
                 font-size:20px;}
-            #f2{text-decoration:underline ;
-                color:bule;}
-            #f2:hover{text-decoration:underline:;
-                color:blue;}
-                
-             body{
-                margin:0px;
+            h1{text-decoration:none;
+                color:#ffffff;
+                }
+
+            body{
+                margin:0px;padding:0px;
                 font-family:Helvetica,Arial,sans-serif;
                 } 
             #main{
-                border:1px #330000 solid;
+                border:0px #330000 solid;
                 margin:0px auto;
                 width:800px;
                }
@@ -30,22 +29,35 @@
                 border:1px #330000 solid;
                 width:800px;
                 height:80px;
-                background:#black;
+                background:black;
                 }    
             aside{
+                border:1px black solid;
+                margin-top:2px;
+                margin-left:0px;
+                
                 width:170px;
                 float:left;             
                 height:400px;
                 }
+            nav{
+                border:0px #000000 solid;
+                margin-top:10px;
+
+                padding:0px;
+               }
+
             article{
-                border-right:1px #330000 solid;
+                border:1px black solid;
                 width:625px;
                 margin-left:175px;
+                margin-top:2px;
                 height:400px;
                 background:#FFFFFF;
                 }    
             footer{
                 border:1px #330000 solid;
+                margin-top:2px;
                 background:#330000;
                 color:#ffffff;
                 width:800px;
@@ -59,15 +71,19 @@
 　　<body>
     <div id="main">
         <header>
-            <h1 >HTML5 &nbsp; CSS &nbsp; JaveScript</h1>
+            <h1>HTML5 &nbsp; CSS &nbsp; JaveScript</h1>
         </header>
         
         <aside>
+            <nav>
+            <ul>
             <li><a href="page1.html" target="_top" id="f1" >HTML5</a></li>
             <li><a href="page2.html" target="_blank" id="f1" >CSS</a></li>
             <li><a href="page3.html" target="_blank" id="f1" >JaveScript</a></li>
             <li><a href="page4.html" target="_blank" id="f1" >PhP</a></li>
             <li><a href="page4.html" target="_blank" id="f1" >MySQL</a></li>
+            <ul>
+            </nav>
         </aside>
             
         <article>
