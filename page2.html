@@ -1,23 +1,130 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>第一页</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     
+    <style type="text/css">
+      body{
+          margin:0px;padding:opx;
+          font-family:Arial Black,楷体;
+          }
+        div{
+          margin:0px auto;
+          border:0px;
+          width:800px;
+          }
+        header{
+          border:1px black solid;
+          padding:0px;
+          margin-top:0px;
+          width:800px;
+          height:80px;
+          background: -webkit-linear-gradient(top, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
+           }
+        aside{
+          border:1px black solid;
+          padding:0px;
+          margin-top:2px;
+          width:170px;
+          height:400px;
+          float:left;
+        }
+        article{
+          border:1px black solid;
+          margin-top:2px;
+          margin-left:175px;
+          height:400px;
+          width:625px;
+          padding:0px;
+        }
+        footer{
+          border:1px #330000 solid;
+          margin-top:2px;
+          background:#330000;
+          font-color:#ffffff;
+          width:800px;
+          height:50px;
+          text-align:center;
+          line-height:50px;
+        }
+        .setsection{
+          display:block;
+          border:0px #330000 solid;
+          margin-top:240px;
+          margin-left:10px;
+          margin-right:0px;
+        }  
+        nav{
+           border:0px #000000 solid;
+           padding:0px;
+           margin-top:50px;
+           height: 250px;
+        }
+        .setdiv{           
+            margin-left:20px;
+        }
+        .seth1{
+          position: absolute;
+        color:blue;
+        margin-top: 10px;
+        margin-left: 50px;
+        font-size: 40px;
+         text-shadow:3px 3px 3px blue;
+        }
+        .seth2{
+        position: absolute;
+        color:#ffffff;
+        margin-top: 20px;
+        margin-left: 100px;
+        font-size: 40px;
+        z-index: 1;
+        filter:glow(color=#ff0000,strength=5);
+
+        }
+    </style>
+    
 　　</head>
-
 　　<body>
-        <h2>你好，世界</h2>
- 
-        <script type="text/css">
-            f1{text-decoration:underline}
-        </script>
-        <ul>
-     <li>
+    <div>
+        <header>
+            <h1 class="seth1">CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS</h1>
+            <h2 class="seth2">CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS</h1>
+        </header>
+        <aside>
+            <nav>
+                <div class="setdiv">
+                    控制文字样式
+                    <ol>
+                        <li>字体属性</li>
+                        <li>段落属性</li>
+                        <li>文字效果属性</li>
+                     </ol>
+                    控制背景
+                    <ol>
+                        <li>背景颜色</li>
+                        <li>背景图片</li>
+                        <li>背景渐变</li>
+                    </ol>
+                </div>
+            </nav>
+        </aside>
+        <article>
+            <section class="setsection"> 
+                <fieldset>
+                <legend> 字体属性</legend>
+                        <li>color：颜色</li>
+                        <li>font-family：样式</li>
+                        <li>font_size：字体大小</li>
+                        <li>font-style：斜体</li>
+                        <li>font-weight：粗体</li>
+                </fieldset>
+            </section>
+        </article>
+        <footer>
             <script type="text/javascript">
-                document.write(Date())</script>       
- 
-     </li>
-
-</ul>
+                document.write(Date())</script> 
+        </footer>
+    </div>
+   
 　　</body>
 　　</html>
