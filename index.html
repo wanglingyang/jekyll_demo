@@ -1,103 +1,264 @@
 ﻿<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>首页</title>
-    <!--    <link rel=stylesheet type="test/css" href="text_css.css"></link>
-    -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>首页</title>
+    <link href="css/number_slideshow.css" rel="stylesheet" type="text/css"></link>
     <style type="text/css">
-        <!--
-             #f1{text-decoration:none;
-                color:#3B3B3B;
-                font-weight:bold;
-                font-size:20px;}
-            #f1:hover{text-decoration:underline;
-                color:blue;
-                font-weight:bold;
-                font-size:20px;}
-            h1{text-decoration:none;
-                color:#ffffff;
-                }
+    *{margin:0px;padding:0;border:0;}
+    body{
+        margin:0px;
+        background:#CCCCCC;
+    }
+    #main{
+        margin:0px auto;
+        padding:0px;
+        height:1000px;
+        width:1000px;
+        border: 1px black solid;
+        background:white;
+    }
+    #menu{
+        position: absolute;
+        z-index: 2;
+        margin:0px;
+        width:1000px;
+        height:30px;
+        border: 1px black solid;
+        background:#FF1141;
+    }
+    #Slideshow{
+        position: absolute;
+        z-index: 1;
+        top:32px;
+        margin:0px;
+        width:1000px;
+        height:300px;
+        border: 1px black solid;
+    }
+    #content1{
 
-            body{
-                margin:0px;padding:0px;
-                font-family:Helvetica,Arial,sans-serif;
-                } 
-            #main{
-                border:0px #330000 solid;
-                margin:0px auto;
-                width:800px;
-               }
-            header{
-                border:1px #330000 solid;
-                width:800px;
-                height:80px;
-                background:black;
-                }    
-            aside{
-                border:1px black solid;
-                margin-top:2px;
-                margin-left:0px;
-                width:170px;
-                float:left;             
-                height:400px;
-                }
-            nav{
-                border:0px #000000 solid;
-                margin-top:10px;
-                padding:0px;
-               }
+        margin-top:334px;
+        width:300px;
+        height:500px;
+        border: 1px black solid;
+        float: left;
+    }
+    #content2{
+        margin-top:334px;
+        width:394px;
+        height:500px;
+        border: 1px black solid;
+        float: left;
 
-            article{
-                border:1px black solid;
-                width:625px;
-                margin-left:175px;
-                margin-top:2px;
-                height:400px;
-                background:#FFFFFF;
-                }    
-            footer{
-                border:1px #330000 solid;
-                margin-top:2px;
-                background:#330000;
-                color:#ffffff;
-                width:800px;
-                height:50px;
-                text-align:center;
-                line-height:50px;
-               }   
-               -->
+    }
+    #content3{
+        margin-top:334px;
+        width:300px;
+        height:500px;
+        border: 1px black solid;
+        float: left;
+    }
+    #sign{
+        margin:0px;
+        width:1000px;
+        height:40px;
+        border: 1px black solid;
+        float: left;
+    }
+
+
+#sc_nav {
+     line-height: 30px;  list-style-type: none;margin-left: 100px;
+}
+
+#sc_nav a {
+    display: block; width: 80px; text-align:center;
+}
+
+#sc_nav a:link  {
+    color:#666; text-decoration:none;
+}
+#sc_nav a:visited  {
+    color:#666;text-decoration:none;
+}
+#sc_nav a:hover  {
+    color:#FFF;text-decoration:none;
+}
+
+#sc_nav li {
+    float: left; width: 110px;
+}
+#sc_nav li a:hover{
+    background:#999;
+}
+#sc_nav li ul {
+    line-height: 27px;  list-style-type: none;text-align:left;
+    left: -999em; width: 100px; position: absolute;
+}
+#sc_nav li ul li{
+    float: left; width: 120px;
+    background: #F6F6F6;
+}
+
+
+#sc_nav li ul a{
+    display: block; width: 100px;text-align:left;padding-left:20px;
+}
+
+#sc_nav li ul a:link  {
+    color:black; text-decoration:none;
+}
+#sc_nav li ul a:visited  {
+    color:#666;text-decoration:none;
+}
+#sc_nav li ul a:hover  {
+    color:#F3F3F3;text-decoration:none;font-weight:normal;
+    background:#C00;
+}
+
+#sc_nav li:hover ul {
+    left: auto;
+}
+
     </style>
-　　</head>
-　　<body>
-    <div id="main">
-        <header>
-            <h1>HTML5 &nbsp; CSS &nbsp; JaveScript</h1>
-        </header>
-        
-        <aside>
-            <nav>
-            <ul>
-            <li><a href="page1.html" target="_top" id="f1" >HTML5</a></li>
-            <li><a href="page2.html" target="_blank" id="f1" >CSS</a></li>
-            <li><a href="page3.html" target="_blank" id="f1" >JaveScript</a></li>
-            <li><a href="page4.html" target="_blank" id="f1" >PhP</a></li>
-            <li><a href="page4.html" target="_blank" id="f1" >MySQL</a></li>
-            <ul>
-            </nav>
-        </aside>
-            
-        <article>
-            <p>信息一</p>
-            <p>信息二</p>
-            <p>信息三</p>
-        </article> 
-         
-        <footer>
-            <li><script type="text/javascript">
-            document.write(Date())</script>
-            </li>       
-        </footer>
+    <script type="text/javascript" src="jQuery/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="js/number_slideshow.js"></script>
+</head>
+    <body>
+       <script language="javascript" type="text/javascript">
+            $(function() {
+                $("#number_slideshow").number_slideshow({
+                    slideshow_autoplay: 'enable',//enable disable
+                    slideshow_time_interval: 3000,
+                    slideshow_window_background_color: "#fff",
+                    slideshow_window_padding: '1',
+                    slideshow_window_width: '996',
+                    slideshow_window_height: '296',
+                    slideshow_border_size: '1',
+                    slideshow_transition_speed: 500, //'normal','slow','fast' or numeral
+                    slideshow_border_color: 'black',
+                    slideshow_show_button: 'enable',//enable disable
+                    slideshow_show_title: 'disable',//enable disable
+                    slideshow_button_text_color: '#CCC',
+                    slideshow_button_current_text_color: '#000',
+                    slideshow_button_background_color: '#333',
+                    slideshow_button_current_background_color: '#666',
+                    slideshow_button_border_color: '#000',
+                    slideshow_loading_gif: 'loading.gif',//loading pic, you can replace it.
+                    slideshow_button_border_size: '1'
+                }); 
+
+            });
+        </script>
+</head>
+<body>
+<div id="main">
+    <div id="menu">
+    <ul id="sc_nav">
+        <li><a href="#">学校概况</a>
+            <ul id="item1">
+            <li><a href="#">学校简介</a></li>
+            <li><a href="#">现任校领导</a></li>
+            <li><a href="#">教学机构</a></li>
+            <li><a href="#">管理机构</a></li>
+            <li><a href="#">校标校训校歌</a></li>
+            <li><a href="#">校宣传片</a></li>
+            <li><a href="#">校园风光</a></li>
+            </ul>
+        </li>
+        <li><a href="#">教育教学</a>
+            <ul id="item2">
+            <li><a href="#">教务管理</a></li>
+            <li><a href="#">教学建设</a></li>
+            <li><a href="#">师资队伍</a></li>
+            <li><a href="#">图书馆</a></li>
+            <li><a href="#">交流合作</a></li>
+            <li><a href="#">教务管理</a></li>
+            <li><a href="#">教学建设</a></li>
+            <li><a href="#">教学示范中心</a></li>
+            <li><a href="#">学科竞赛</a></li>
+            <li><a href="#">学生天地</a></li>
+            </ul>
+        </li>
+        <li><a href="#">教育教学</a>
+            <ul id="item3">
+            <li><a href="#">教学建设</a></li>
+            <li><a href="#">专业建设</a></li>
+            <li><a href="#">精品课程</a></li>
+            <li><a href="#">实践教学</a></li>
+            <li><a href="#">教学成果</a></li>
+            </ul>
+        </li>
+            <li><a href="#">教育教学</a>
+            <ul id="item4">
+            <li><a href="#">教学建设</a></li>
+            <li><a href="#">专业建设</a></li>
+            <li><a href="#">精品课程</a></li>
+            <li><a href="#">实践教学</a></li>
+            <li><a href="#">教学成果</a></li>
+            </ul>
+        </li>
+        <li><a href="#">教育教学</a>
+            <ul id="item5">
+            <li><a href="#">教学建设</a></li>
+            <li><a href="#">专业建设</a></li>
+            <li><a href="#">精品课程</a></li>
+            <li><a href="#">实践教学</a></li>
+            <li><a href="#">教学成果</a></li>
+            </ul>
+        </li>
+        <li><a href="#">教育教学</a>
+            <ul id="item6">
+            <li><a href="#">教学建设</a></li>
+            <li><a href="#">专业建设</a></li>
+            <li><a href="#">精品课程</a></li>
+            <li><a href="#">实践教学</a></li>
+            <li><a href="#">教学成果</a></li>
+            </ul>
+        </li>
+         <li><a href="#">教育教学</a>
+            <ul id="item7">
+            <li><a href="#">教学建设</a></li>
+            <li><a href="#">专业建设</a></li>
+            <li><a href="#">精品课程</a></li>
+            <li><a href="#">实践教学</a></li>
+            <li><a href="#">教学成果</a></li>
+            </ul>
+        </li>
+
+    </ul>
     </div>
-　　</body>
-　　</html>
+
+    <div id="Slideshow">
+        <div id="number_slideshow" class="number_slideshow">
+            <ul>
+                <li><a href="javascript:void(0);"><img src="images/page1.jpg" width="1000" height="300" alt="slideshow1"/></a></li>
+                <li><a href="javascript:void(0);"><img src="images/page2.jpg" width="1000" height="300" alt="slideshow2"/></a></li>
+                <li><a href="javascript:void(0);"><img src="images/page3.jpg" width="1000" height="300" alt="slideshow3"/></a></li>
+                <li><a href="javascript:void(0);"><img src="images/page4.jpg" width="1000" height="300" alt="slideshow4"/></a></li>
+            </ul>
+            <ul class="number_slideshow_nav">
+                <li><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+
+    <aside id="content1">
+    </aside>
+
+    <setion id="content2">
+    </setion>
+
+    <nav id="content3">
+    </nav>
+
+    <footer id="sign">
+    </footer>
+</div>
+</body>
+</html>
