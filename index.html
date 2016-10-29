@@ -15,17 +15,20 @@
         padding:0px;
         height:865px;
         width:1000px;
-        border: 1px black solid;
+        border: 0px;
         background:white;
+        box-shadow:0px 0px 25px black;
     }
     #menu{
+        font-family: 宋体;
+        font-weight: bold;
         position: absolute;
         z-index: 2;
         margin:0px;
         width:1000px;
-        height:30px;
-        border: 1px black solid;
-        background:red;
+        height:32px;
+        border: 0px ;
+        background:linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 38%,rgba(109,0,25,1) 100%);;
     }
     #Slideshow{
         position: absolute;
@@ -34,7 +37,7 @@
         margin:0px;
         width:1000px;
         height:300px;
-        border: 1px black solid;
+        border: 0px;
     }
     #content1{
 
@@ -43,12 +46,13 @@
         padding-left: 10px;
         width:290px;
         height:480px;
-        border: 1px black solid;
+        border: 0px;
+        color: #8B0000;
         float: left;
     }
     #content1_1
     {
-        border-top: solid;
+        border-top: #8B0000 solid;
 
         margin-top: 5px;
         margin-right: 10px;
@@ -62,13 +66,14 @@
         padding-left: 20px;
         width:374px;
         height:480px;
-        border: 1px black solid;
+        border: 0px;
+        color: #8B0000;
         float: left;
 
     }
     #content2_1{
         padding-top: 10px;
-        border-top: solid;
+        border-top: #8B0000 solid;
         padding-left: 20px;
         margin-right: 10px;
         margin-top: 5px;
@@ -81,7 +86,8 @@
     }
     #content2_1_1{
         line-height: 20px;
-        color: black;
+        font-size: 13px;
+        color: #4D4D4D;
         text-decoration:underline;
     }
     #content2_1_1:hover{
@@ -94,7 +100,7 @@
         margin-top:334px;
         width:300px;
         height:500px;
-        border: 1px black solid;
+        border: 0px;
         float: left;
     }
 
@@ -120,10 +126,10 @@
         margin:0px;
         width:1000px;
         height:25px;
-        border: 1px black solid;
+        border: 0px;
         float: left;
         color: white;
-        background: red;
+        background:linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 38%,rgba(109,0,25,1) 100%);;
         text-align:center; 
         padding-top: 5px;
     }
@@ -190,21 +196,21 @@
                     slideshow_autoplay: 'enable',//enable disable
                     slideshow_time_interval: 3000,
                     slideshow_window_background_color: "#fff",
-                    slideshow_window_padding: '1',
-                    slideshow_window_width: '996',
-                    slideshow_window_height: '296',
-                    slideshow_border_size: '1',
+                    slideshow_window_padding: '0',
+                    slideshow_window_width: '1000',
+                    slideshow_window_height: '300',
+                    slideshow_border_size: '0',
                     slideshow_transition_speed: 500, //'normal','slow','fast' or numeral
                     slideshow_border_color: 'black',
                     slideshow_show_button: 'enable',//enable disable
                     slideshow_show_title: 'disable',//enable disable
                     slideshow_button_text_color: '#CCC',
                     slideshow_button_current_text_color: '#000',
-                    slideshow_button_background_color: '#333',
-                    slideshow_button_current_background_color: '#666',
+                    slideshow_button_background_color: 'red',
+                    slideshow_button_current_background_color: 'white',
                     slideshow_button_border_color: '#000',
                     slideshow_loading_gif: 'loading.gif',//loading pic, you can replace it.
-                    slideshow_button_border_size: '1'
+                    slideshow_button_border_size: '0'
                 }); 
 
             });
@@ -308,7 +314,7 @@
 
     <aside id="content1">
       
-        <h1>专题网站<h1>
+        <strong><p>专题网站</p></strong>
         <div id="content1_1">
         <table width="100%" border="0" cellspacing="0" cellpadding="0" >
         <tr><td>
@@ -322,7 +328,7 @@
         </table>
         </div>
 
-        <h1>专题网站</h1>
+        <strong><p>专题网站</p></strong>
         <div id="content1_1">
         <table width="100%" border="0" cellspacing="0" cellpadding="0" >
         <tr><td>
@@ -447,7 +453,7 @@
     </nav>
 
     <footer id="sign">
-        Copyright © FuJian University of Technology&nbsp;&nbsp; 闽ICP备10022194号-1 &nbsp;&nbsp;福建省福州市大学新区学园路3号 350118
+        Copyright © FuJian University of Technology &nbsp;&nbsp;福建省福州市大学新区学园路3号 350118
     </footer>
 </div>
 </body>
