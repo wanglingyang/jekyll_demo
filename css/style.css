@@ -3,6 +3,7 @@
         margin:0px;
         background:#CCCCCC;
     }
+
     #main{
         margin:0px auto;
         padding:0px;
@@ -65,18 +66,24 @@
         padding-left: 20px;
         width:374px;
         height:480px;
-        border: 0px;
+  
         color: #8B0000;
         float: left;
 
     }
+    #content2 ul{
+        list-style:none; 
+    }
     .content2_1{
+      
         padding-top: 10px;
         border-top: #8B0000 solid;
         padding-left: 20px;
+        padding-right: 20px;
         margin-right: 10px;
         margin-top: 5px;
         margin-bottom: 10px
+
     }
 
     .content2_2{
@@ -84,7 +91,12 @@
         margin-top: 5px;
         margin-bottom: 15px
     }
-    
+
+    .block li{      
+
+        overflow: hidden; white-space: nowrap; text-overflow: ellipsis;      
+    }
+
     .content2_1 li{      
 
         overflow: hidden; white-space: nowrap; text-overflow: ellipsis;      
@@ -111,8 +123,6 @@
 
     #content3_1
     {
-  
-
         margin-top: 20px;
         margin-left: 40px;
 
@@ -138,3 +148,112 @@
         text-align:center; 
         padding-top: 5px;
     }
+
+
+/*第二种形式*/  
+
+#tabs1{  
+  
+}  
+  
+.menu1box{  
+  
+ position:relative;  
+  
+ overflow:hidden;  
+  
+ height:22px;  
+  
+ width:400px;  
+  
+ text-align:left;  
+  
+}  
+  
+#menu1{  
+  
+ position:absolute;  
+  
+ top:0;  
+  
+ left:0;  
+  
+ z-index:1;  
+  
+}  
+  
+#menu1 li{  
+  
+ float:left;  
+  
+ display:block;  
+  
+ cursor:pointer;  
+  
+ width:100px;  
+  
+ text-align:center;  
+  
+ line-height:21px;  
+  
+ height:21px;  
+  
+}  
+  
+#menu1 li.hover{  
+  
+ border-left:1px solid red;   
+  
+ border-right:1px solid red;  
+  
+}  
+
+#menu1 a{  
+  
+ color:#c00;  
+  
+ text-decoration:none;  
+  
+}  
+  
+#menu1 a:hover {  
+
+ color: #4D4D4D;  
+  
+ text-decoration:underline;  
+  
+}  
+
+
+  
+.main1box{  
+  
+ clear:both;  
+  
+ margin-top:1px;  
+  
+ border-top: #8B0000 solid;
+  
+ height:120px;  
+  
+ width:360px;  
+  
+}  
+.maintag{  
+  
+ clear:both;  
+  
+} 
+
+#main1 ul{  
+  
+ display: none;  
+  
+}  
+  
+#main1 ul.block{  
+  
+ display: block;  
+  padding-left: 20px;
+  padding-top: 10px;
+} 
