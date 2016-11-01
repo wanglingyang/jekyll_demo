@@ -22,7 +22,7 @@ else
 obj.src="images/"+arr[curIndex]; 
 } 
 setInterval(changeImg,timeInterval); 
-
+setInterval(setTab(1,0),timeInterval); 
 //标签页
 function setTab(m,n){  
   
