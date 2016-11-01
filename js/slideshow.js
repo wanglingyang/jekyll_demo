@@ -8,6 +8,13 @@ arr[2]="html5.jpg";
 arr[3]="page7.jpg"; 
 arr[4]="Photoshop.png";  
 
+var literal=new Array();
+literal[0]="css3";
+literal[1]="JavaScript";
+literal[2]="Html5";
+literal[3]="h5+css3+js";
+literal[4]="Photoshop";
+
 function changeImg() 
 { 
 var obj=document.getElementById("change"); 
@@ -19,7 +26,8 @@ else
 	{ 
 		curIndex+=1; 
 	} 
-obj.src="images/"+arr[curIndex]; 
+obj.src="images/"+arr[curIndex];
+document.getElementById("Explanation").innerHTML=literal[curIndex];
 } 
 setInterval(changeImg,timeInterval); 
 
