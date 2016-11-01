@@ -1,0 +1,140 @@
+﻿ *{margin:0px;padding:0px;border:0;}
+    body{
+        margin:0px;
+        background:#CCCCCC;
+    }
+    #main{
+        margin:0px auto;
+        padding:0px;
+        height:865px;
+        width:1000px;
+        border: 0px;
+        background:white;
+        box-shadow:0px 0px 25px black;
+    }
+    #menu{
+        font-family: 宋体;
+        font-weight: bold;
+        position: absolute;
+        z-index: 2;
+        margin:0px;
+        width:1000px;
+        height:32px;
+        border: 0px ;
+        background:linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 38%,rgba(109,0,25,1) 100%);;
+    }
+    #Slideshow{
+        position: absolute;
+        z-index: 1;
+        top:32px;
+        margin:0px;
+        width:1000px;
+        height:300px;
+        border: 0px;
+    }
+    #content1{
+
+        margin-top:334px;
+        padding-top: 20px;
+        padding-left: 10px;
+        width:290px;
+        height:480px;
+        border: 0px;
+        color: #8B0000;
+        float: left;
+    }
+    .content1_1
+    {
+        border-top: #8B0000 solid;
+        margin-top: 5px;
+        margin-right: 10px;
+        padding-top: 10px;
+        padding-left: 35px;
+    }
+    #content1_2{
+        border-top: #8B0000 solid;
+        margin-top: 5px;
+        margin-right: 10px;
+        padding-top: 10px;
+        padding-left: 35px;
+    }
+
+    #content2{
+        margin-top:334px;
+        padding-top: 20px;
+        padding-left: 20px;
+        width:374px;
+        height:480px;
+        border: 0px;
+        color: #8B0000;
+        float: left;
+
+    }
+    .content2_1{
+        padding-top: 10px;
+        border-top: #8B0000 solid;
+        padding-left: 20px;
+        margin-right: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px
+    }
+
+    .content2_2{
+      
+        margin-top: 5px;
+        margin-bottom: 15px
+    }
+    
+    .content2_1 li{      
+
+        overflow: hidden; white-space: nowrap; text-overflow: ellipsis;      
+    }
+    .content2_1_1{
+        line-height: 20px;
+        font-size: 13px;
+        color: #4D4D4D;
+        text-decoration:underline;
+    }
+    .content2_1_1:hover{
+        line-height: 20px;
+        color: red;
+        text-decoration:underline;
+    }
+
+    #content3{
+        margin-top:334px;
+        width:300px;
+        height:500px;
+        border: 0px;
+        float: left;
+    }
+
+    #content3_1
+    {
+  
+
+        margin-top: 20px;
+        margin-left: 40px;
+
+    }
+
+    form{
+        border: 1px black solid; 
+        width:217px;
+        height:19px;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+
+
+    #sign{
+        margin:0px;
+        width:1000px;
+        height:25px;
+        border: 0px;
+        float: left;
+        color: white;
+        background:linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 38%,rgba(109,0,25,1) 100%);
+        text-align:center; 
+        padding-top: 5px;
+    }

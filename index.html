@@ -4,219 +4,15 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>首页</title>
     <link href="css/number_slideshow.css" rel="stylesheet" type="text/css"></link>
-    <style type="text/css">
-    *{margin:0px;padding:0px;border:0;}
-    body{
-        margin:0px;
-        background:#CCCCCC;
-    }
-    #main{
-        margin:0px auto;
-        padding:0px;
-        height:865px;
-        width:1000px;
-        border: 0px;
-        background:white;
-        box-shadow:0px 0px 25px black;
-    }
-    #menu{
-        font-family: 宋体;
-        font-weight: bold;
-        position: absolute;
-        z-index: 2;
-        margin:0px;
-        width:1000px;
-        height:32px;
-        border: 0px ;
-        background:linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 38%,rgba(109,0,25,1) 100%);;
-    }
-    #Slideshow{
-        position: absolute;
-        z-index: 1;
-        top:32px;
-        margin:0px;
-        width:1000px;
-        height:300px;
-        border: 0px;
-    }
-    #content1{
-
-        margin-top:334px;
-        padding-top: 20px;
-        padding-left: 10px;
-        width:290px;
-        height:480px;
-        border: 0px;
-        color: #8B0000;
-        float: left;
-    }
-    #content1_1
-    {
-        border-top: #8B0000 solid;
-
-        margin-top: 5px;
-        margin-right: 10px;
-        padding-top: 10px;
-        padding-left: 35px;
-    }
-
-    #content2{
-        margin-top:334px;
-        padding-top: 20px;
-        padding-left: 20px;
-        width:374px;
-        height:480px;
-        border: 0px;
-        color: #8B0000;
-        float: left;
-
-    }
-    #content2_1{
-        padding-top: 10px;
-        border-top: #8B0000 solid;
-        padding-left: 20px;
-        margin-right: 10px;
-        margin-top: 5px;
-        margin-bottom: 10px
-    }
+    <link href="css/style.css" rel="stylesheet" type="text/css"></link>
     
-    #content2_1 li{      
-
-        overflow: hidden; white-space: nowrap; text-overflow: ellipsis;      
-    }
-    #content2_1_1{
-        line-height: 20px;
-        font-size: 13px;
-        color: #4D4D4D;
-        text-decoration:underline;
-    }
-    #content2_1_1:hover{
-        line-height: 20px;
-        color: red;
-        text-decoration:underline;
-    }
-
-    #content3{
-        margin-top:334px;
-        width:300px;
-        height:500px;
-        border: 0px;
-        float: left;
-    }
-
-    #content3_1
-    {
-  
-
-        margin-top: 20px;
-        margin-left: 40px;
-
-    }
-
-    form{
-        border: 1px black solid; 
-        width:217px;
-        height:19px;
-        margin-top: 10px;
-        margin-left: 40px;
-    }
-
-
-    #sign{
-        margin:0px;
-        width:1000px;
-        height:25px;
-        border: 0px;
-        float: left;
-        color: white;
-        background:linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 38%,rgba(109,0,25,1) 100%);;
-        text-align:center; 
-        padding-top: 5px;
-    }
-
-
-    #sc_nav {
-     line-height: 30px;  list-style-type: none;margin-left: 100px;
-
-    }
-
-#sc_nav a {
-    display: block; width: 80px; text-align:center;
-    text-decoration:none;color: white;
-}
-
-
-#sc_nav a:hover  {
-    color:#FFF;text-decoration:none;
-}
-
-#sc_nav li {
-    float: left; width: 110px;
-}
-#sc_nav li a:hover{
-    background:#999;
-}
-#sc_nav li ul {
-    line-height: 27px;  list-style-type: none;text-align:left;
-    left: -999em; width: 100px; position: absolute;
-}
-#sc_nav li ul li{
-    float: left; width: 120px;
-    background: #F6F6F6;
-}
-
-
-#sc_nav li ul a{
-    display: block; width: 100px;text-align:left;padding-left:20px;
-}
-
-#sc_nav li ul a:link  {
-    color:black; text-decoration:none;
-}
-#sc_nav li ul a:visited  {
-    color:#666;text-decoration:none;
-}
-#sc_nav li ul a:hover  {
-    color:#F3F3F3;text-decoration:none;font-weight:normal;
-    background:#C00;
-}
-
-#sc_nav li:hover ul {
-    left: auto;
-}
-
-    </style>
     <script type="text/javascript" src="jQuery/jquery-3.1.1.js"></script>
-<script type="text/javascript" src="js/number_slideshow.js"></script>
-</head>
-    <body>
-       <script language="javascript" type="text/javascript">
-            $(function() {
-                $("#number_slideshow").number_slideshow({
-                    slideshow_autoplay: 'enable',//enable disable
-                    slideshow_time_interval: 3000,
-                    slideshow_window_background_color: "#fff",
-                    slideshow_window_padding: '0',
-                    slideshow_window_width: '1000',
-                    slideshow_window_height: '300',
-                    slideshow_border_size: '0',
-                    slideshow_transition_speed: 500, //'normal','slow','fast' or numeral
-                    slideshow_border_color: 'black',
-                    slideshow_show_button: 'enable',//enable disable
-                    slideshow_show_title: 'disable',//enable disable
-                    slideshow_button_text_color: '#CCC',
-                    slideshow_button_current_text_color: '#000',
-                    slideshow_button_background_color: 'red',
-                    slideshow_button_current_background_color: 'white',
-                    slideshow_button_border_color: '#000',
-                    slideshow_loading_gif: 'loading.gif',//loading pic, you can replace it.
-                    slideshow_button_border_size: '0'
-                }); 
+    <script type="text/javascript" src="js/number_slideshow.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
 
-            });
-        </script>
 </head>
 <body>
+
 <div id="main">
     <div id="menu">
     <ul id="sc_nav">
@@ -245,49 +41,48 @@
             <li><a href="#">学生天地</a></li>
             </ul>
         </li>
-        <li><a href="#">教育教学</a>
+        <li><a href="#">科学研究</a>
             <ul id="item3">
-            <li><a href="#">教学建设</a></li>
-            <li><a href="#">专业建设</a></li>
-            <li><a href="#">精品课程</a></li>
-            <li><a href="#">实践教学</a></li>
-            <li><a href="#">教学成果</a></li>
+            <li><a href="#">科研处</a></li>
+            <li><a href="#">研究生处</a></li>
+            <li><a href="#">科研现状</a></li>
+            <li><a href="#">科技创新平台</a></li>
+            <li><a href="#">重点建设学科</a></li>
+            <li><a href="#">科研管理学科</a></li>
+            <li><a href="#">学报采集系统</a></li>
+            <li><a href="#">学分建设</a></li>
             </ul>
         </li>
-            <li><a href="#">教育教学</a>
+            <li><a href="#">招生就业</a>
             <ul id="item4">
-            <li><a href="#">教学建设</a></li>
-            <li><a href="#">专业建设</a></li>
-            <li><a href="#">精品课程</a></li>
-            <li><a href="#">实践教学</a></li>
-            <li><a href="#">教学成果</a></li>
+            <li><a href="#">招生信息</a></li>
+            <li><a href="#">就业信息</a></li>
+            <li><a href="#">研究生招生</a></li>
             </ul>
         </li>
-        <li><a href="#">教育教学</a>
+        <li><a href="#">文化建设</a>
             <ul id="item5">
-            <li><a href="#">教学建设</a></li>
-            <li><a href="#">专业建设</a></li>
-            <li><a href="#">精品课程</a></li>
-            <li><a href="#">实践教学</a></li>
-            <li><a href="#">教学成果</a></li>
+            <li><a href="#">历史朔源</a></li>
+            <li><a href="#">文化研究中心</a></li>
+            <li><a href="#">文献整理</a></li>
+            <li><a href="#">知识产权</a></li>
+            <li><a href="#">法律援助</a></li>
+            <li><a href="#">校报法</a></li>
             </ul>
         </li>
-        <li><a href="#">教育教学</a>
+        <li><a href="#">对外交流</a>
             <ul id="item6">
-            <li><a href="#">教学建设</a></li>
-            <li><a href="#">专业建设</a></li>
-            <li><a href="#">精品课程</a></li>
-            <li><a href="#">实践教学</a></li>
-            <li><a href="#">教学成果</a></li>
+  
             </ul>
         </li>
-         <li><a href="#">教育教学</a>
+         <li><a href="#">信息资源</a>
             <ul id="item7">
-            <li><a href="#">教学建设</a></li>
-            <li><a href="#">专业建设</a></li>
-            <li><a href="#">精品课程</a></li>
-            <li><a href="#">实践教学</a></li>
-            <li><a href="#">教学成果</a></li>
+            <li><a href="#">现代教育技术</a></li>
+            <li><a href="#">邮箱入口</a></li>
+            <li><a href="#">VPN登录</a></li>
+            <li><a href="#">校内网址导航</a></li>
+            <li><a href="#">视频点播</a></li>
+            <li><a href="#">视频资源共享</a></li>
             </ul>
         </li>
 
@@ -315,7 +110,7 @@
     <aside id="content1">
       
         <strong><p>专题网站</p></strong>
-        <div id="content1_1">
+        <div class="content1_1">
         <table width="100%" border="0" cellspacing="0" cellpadding="0" >
         <tr><td>
         <a href="javascript:void(0);" title="JavaScript"><img src="images/page5.jpg" 
@@ -328,53 +123,51 @@
         </table>
         </div>
 
-        <strong><p>专题网站</p></strong>
-        <div id="content1_1">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0" >
-        <tr><td>
-        <a href="javascript:void(0);" title="JavaScript"><img src="images/page5.jpg" 
-        alt=" " width="200" height="80"></img></a>
-        <td></tr>
-        <tr><td>
-        <a href="javascript:void(0);" title="jQuery"><img src="images/page6.jpg" 
-        alt=" " width="200" height="80"></img></a>
-        <td></tr>
-        </table>
+        <strong><p>图文热点</p></strong>
+
+        <div id="content1_2">
+        <a href="javascript:void(0);" title="JavaScript"><img src="images/page5.jpg" alt=" " width="180" height="180" id="change" ></img></a>
+
         </div>
+
     </aside>
 
     <setion id="content2">
 
-        <strong><p>专题网站</p></strong>
+        <strong><p>工院要闻</p></strong>
 
-        <div id="content2_1">
+        <div class="content2_1">
         <ul>
-            <li><a href="javascript:void(0);" id="content2_1_1">福建工程学院是福建省重点建设高校</a></li>
-            <li><a href="javascript:void(0);" id="content2_1_1">学校位于福建省省会福州市，占地面积136.88公顷，校舍建筑面积62.24万平方米，其中大学城新校区107.20公顷，已投入使用的建筑面积41.95万平方米。</a></li>
-            <li><a href="javascript:void(0);" id="content2_1_1">传承“大机电、大土木”优势，构建服务海峡西岸经济区建设的五大专业群，即装备制造业、电子信息和高新技术产业、建筑类产业、交通运输和物流业、文化产业专业群。</a></li>
-            <li><a href="javascript:void(0);" id="content2_1_1">全日制在校生26093余人。</a></li>
+            <li><span style="font-family: Times">■</span>&nbsp<a href="javascript:void(0);" class="content2_1_1">福建工程学院是福建省重点建设高校</a></li>
+            <li><span style="font-family: Times">■</span>&nbsp<a href="javascript:void(0);" class="content2_1_1">学校位于福建省省会福州市，占地面积136.88公顷，校舍建筑面积62.24万平方米，其中大学城新校区107.20公顷，已投入使用的建筑面积41.95万平方米。</a></li>
+            <li><span style="font-family: Times">■</span>&nbsp<a href="javascript:void(0);" class="content2_1_1">传承“大机电、大土木”优势，构建服务海峡西岸经济区建设的五大专业群，即装备制造业、电子信息和高新技术产业、建筑类产业、交通运输和物流业、文化产业专业群。</a></li>
+            <li><span style="font-family: Times">■</span>&nbsp<a href="javascript:void(0);" class="content2_1_1">全日制在校生26093余人。</a></li>
         </ul> 
         </div>
 
-      <strong><p>专题网站</p></strong>       
-        <div id="content2_1">
+      <strong><p>学术活动</p></strong>       
+        <div class="content2_1">
         <ul>
-            <li><a href="javascript:void(0);" id="content2_1_1">福建工程学院是福建省重点建设高校</a></li>
-            <li><a href="javascript:void(0);" id="content2_1_1">学校位于福建省省会福州市，占地面积136.88公顷，校舍建筑面积62.24万平方米，其中大学城新校区107.20公顷，已投入使用的建筑面积41.95万平方米。</a></li>
-            <li><a href="javascript:void(0);" id="content2_1_1">传承“大机电、大土木”优势，构建服务海峡西岸经济区建设的五大专业群，即装备制造业、电子信息和高新技术产业、建筑类产业、交通运输和物流业、文化产业专业群。</a></li>
-            <li><a href="javascript:void(0);" id="content2_1_1">全日制在校生26093余人。</a></li>
+            <li><span style="font-family: Times">■</span>&nbsp<a href="javascript:void(0);" class="content2_1_1">福建工程学院是福建省重点建设高校</a></li>
+            <li><span style="font-family: Times">■</span>&nbsp<a href="javascript:void(0);" class="content2_1_1">学校位于福建省省会福州市，占地面积136.88公顷，校舍建筑面积62.24万平方米，其中大学城新校区107.20公顷，已投入使用的建筑面积41.95万平方米。</a></li>
+            <li><span style="font-family: Times">■</span>&nbsp<a href="javascript:void(0);" class="content2_1_1">传承“大机电、大土木”优势，构建服务海峡西岸经济区建设的五大专业群，即装备制造业、电子信息和高新技术产业、建筑类产业、交通运输和物流业、文化产业专业群。</a></li>
+            <li><span style="font-family: Times">■</span>&nbsp<a href="javascript:void(0);" class="content2_1_1">全日制在校生26093余人。</a></li>
         </ul> 
         </div>
 
-              <strong><p>专题网站</p></strong>       
-        <div id="content2_1">
+        <strong><p>通知公告</p></strong>       
+        <div class="content2_1">
         <ul>
-            <li><a href="javascript:void(0);" id="content2_1_1">福建工程学院是福建省重点建设高校</a></li>
-            <li><a href="javascript:void(0);" id="content2_1_1">学校位于福建省省会福州市，占地面积136.88公顷，校舍建筑面积62.24万平方米，其中大学城新校区107.20公顷，已投入使用的建筑面积41.95万平方米。</a></li>
-            <li><a href="javascript:void(0);" id="content2_1_1">传承“大机电、大土木”优势，构建服务海峡西岸经济区建设的五大专业群，即装备制造业、电子信息和高新技术产业、建筑类产业、交通运输和物流业、文化产业专业群。</a></li>
-            <li><a href="javascript:void(0);" id="content2_1_1">全日制在校生26093余人。</a></li>
+            <li><span style="font-family: Times">■</span>&nbsp<a href="javascript:void(0);" class="content2_1_1">福建工程学院是福建省重点建设高校</a></li>
+            <li><span style="font-family: Times">■</span>&nbsp<a href="javascript:void(0);" class="content2_1_1">学校位于福建省省会福州市，占地面积136.88公顷，校舍建筑面积62.24万平方米，其中大学城新校区107.20公顷，已投入使用的建筑面积41.95万平方米。</a></li>
+            <li><span style="font-family: Times">■</span>&nbsp<a href="javascript:void(0);" class="content2_1_1">传承“大机电、大土木”优势，构建服务海峡西岸经济区建设的五大专业群，即装备制造业、电子信息和高新技术产业、建筑类产业、交通运输和物流业、文化产业专业群。</a></li>
+            <li><span style="font-family: Times">■</span>&nbsp<a href="javascript:void(0);" class="content2_1_1">全日制在校生26093余人。</a></li>
         </ul> 
         </div>
+
+        <strong><p>校内信息</p></strong>
+         <div class="content2_2"></div>
+         <strong><p>励志警言</p></strong>
     </setion>
 
     <nav id="content3">
