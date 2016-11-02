@@ -1,0 +1,154 @@
+﻿ *{margin:0px;padding:0px;border:0;}
+
+body{
+	     margin:0px;
+          background:white;
+
+}
+
+#listPage{
+	    margin:0px auto;
+        padding:0px;
+        height:586px;
+        width:1000px;
+   
+         background:#CCCCCC;
+           box-shadow:0px 0px 25px black;
+
+}
+#picture{
+	    height:150px;
+        width:1000px;
+       
+
+}
+#picture_1{
+		margin-top: 10px;
+		margin-left: 25px;
+		padding-left: 20px;
+		height: 130px;
+		width: 150px;
+		border-right: 2px #940522 solid;
+		float: left;
+}
+
+#picture_2{
+	display: block;
+		float: left;
+		margin-left: 20px;
+		margin-top: 100px;
+		font-size: 30px;
+		font-weight: bolder;
+
+
+
+}
+
+header{
+		height:30px;
+        width:1000px;
+ 
+         background:linear-gradient(to bottom,
+          rgba(169,3,41,1) 0%,
+          rgba(143,2,34,1) 38%,
+          rgba(109,0,25,1) 100%);
+}
+
+#content1{
+		height:400px;
+        width:200px;
+        
+        float: left;
+}
+
+#content1_1{
+	    margin-top: 25px;
+		margin-left: 10px;
+		height:200px;
+        width:150px;
+     
+        line-height: 26px;
+}
+
+#content1_1 a{
+	text-decoration: none;
+}
+
+#content1_1 a:hover{
+	text-decoration: underline;
+}
+
+#content1_2{
+	   list-style-type:none; 
+	   margin-left: 10px;
+
+}
+.content1_3{
+	color:#940522;
+}
+
+#content2{
+	    height:400px;
+        width:600px;
+        border:0px black solid;
+        float: left;
+        background: white;
+}
+#content2_1{
+		margin-top: 20px;
+		margin-left: 30px;
+		height:20px;
+        width:300px;
+        border:0px black solid;
+}
+#content2_2{
+		margin-top: 50px;
+		margin-left: 70px;
+		width: 500px;
+        border:0px black solid;
+
+}
+
+
+#content3{
+		height:400px;
+        width:199px;
+        
+        border-left:1px #940522 solid;
+        float: left;
+         background: white;
+}
+
+#content3_1{
+	margin-top: 10px;
+	margin-left: 10px;
+
+}
+#content3_2{
+	margin-top: 20px;
+	margin-left: 20px;
+	     width:166px;
+        border:1px black solid;
+}
+
+
+footer{
+		height:30px;
+        width:1000px;
+        border:0px black solid;
+        float: left;
+}
+
+    #sign{
+        margin:0px;
+        width:1000px;
+        height:25px;
+        float: left;
+        color: white;
+        background:linear-gradient(to bottom, 
+        	rgba(169,3,41,1) 0%,
+        	rgba(143,2,34,1) 38%,
+        	rgba(109,0,25,1) 100%);
+        text-align:center; 
+        padding-top: 5px;
+    }
